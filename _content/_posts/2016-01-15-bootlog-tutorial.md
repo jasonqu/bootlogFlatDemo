@@ -25,7 +25,7 @@ bootlog是一个sbt插件，所以这里假设您使用sbt作为自己的常用�
 
 * 注册[github](https://github.com/)账户
 * 创建主页仓库：`{username}.github.io`
-* 创建博客仓库：`blog`
+* 创建博客仓库：`blog`【记得创建它的`gh-pages`分支】
 * 详细过程参见[github帮助](https://help.github.com/articles/user-organization-and-project-pages/)
 
 #### 第二步，fork本工程
