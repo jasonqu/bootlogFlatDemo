@@ -3,8 +3,11 @@ lazy val bootlogFlatDemo = (project in file("."))
   .settings(
     // customize assets, the 2nd parameter equals (baseDirectory.value / relativeFilePath)
     assetResourceMapping ++= Seq(
-      ("stylesheets/prism.css" -> "bower_components/prism/themes/prism-coy.css"),
-      ("js/prism.js" -> "bower_components/prism/prism.js"),
+      // you can use bower to download the assets
+      // ("stylesheets/prism.css" -> "bower_components/prism/themes/prism-coy.css"),
+      // ("js/prism.js" -> "bower_components/prism/prism.js"),
+      ("stylesheets/prism.css" -> "assets/css/prism-coy.css"),
+      ("js/prism.js" -> "assets/js/prism.js"),
       ("js/app.js" -> "assets/js/app.js")
     )
   )
