@@ -17,12 +17,12 @@
 
     <!-- Le styles -->
     
-    <link rel="stylesheet" media="all" href="/bootlogFlatDemo/stylesheets/app.css"> 
-    <link rel="stylesheet" media="all" href="/bootlogFlatDemo/stylesheets/bootstrap.3.3.6.min.css"> 
-    <link rel="stylesheet" media="all" href="/bootlogFlatDemo/stylesheets/bootflat-2.0.4.min.css"> 
-    <link rel="stylesheet" media="all" href="/bootlogFlatDemo/stylesheets/octicons.css"> 
-    <link rel="stylesheet" media="all" href="/bootlogFlatDemo/stylesheets/prism.css"> 
-    <link rel="shortcut icon" type="image/png" href="/bootlogFlatDemo/images/favicon.png">
+    <link rel="stylesheet" media="all" href="/stylesheets/bootstrap.3.3.6.min.css"> 
+    <link rel="stylesheet" media="all" href="/stylesheets/bootflat-2.0.4.min.css"> 
+    <link rel="stylesheet" media="all" href="/stylesheets/octicons.css"> 
+    <link rel="stylesheet" media="all" href="/stylesheets/prism.css"> 
+    <link rel="stylesheet" media="all" href="/stylesheets/app.css"> 
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
 
     <link href="atom.xml" type="application/atom+xml" rel="alternate" title="a static site generator powered by sbt, twirl, bootstrap and bootflat ATOM Feed">
     <link href="rss.xml" type="application/rss+xml" rel="alternate" title="a static site generator powered by sbt, twirl, bootstrap and bootflat RSS Feed">
@@ -40,11 +40,14 @@
       </button>
       
       
-      <a class="navbar-brand pull-left" href="/"><img src="/bootlogFlatDemo/images/blog.png" class="navbar-logo" alt="logo"/>&nbsp;Bootlog Demo</a>
+      <a class="navbar-brand pull-left" href="/"><img src="/images/blog.png" class="navbar-logo" alt="logo"/>&nbsp;Bootlog Demo</a>
       
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
+        
+        <li><a href="tags.html">Tags</a></li>
+        
         
         <!--todo refine nav-{{slug}} and current active-->
       </ul>
@@ -73,9 +76,14 @@
       <!--</h5>-->
       <!--{{/if}}-->
       
-      <a href="/bootlogFlatDemo/tag/.html">
-        <span class="label tag- label-default">
-          <i class="glyphicon glyphicon-tag"></i>  </span></a>
+      <a href="/tag/bootlog.html">
+        <span class="label tag-bootlog label-default">
+          <i class="glyphicon glyphicon-tag"></i> bootlog </span></a>
+      &nbsp;
+      
+      <a href="/tag/document.html">
+        <span class="label tag-document label-primary">
+          <i class="glyphicon glyphicon-tag"></i> document </span></a>
       &nbsp;
       
     </div>
@@ -155,7 +163,7 @@ val previewDrafts = settingKey[Boolean](&quot;if this is true, then generated si
 </code></pre>
 <p>此时将把工程目录的<code>assets/css/style.css</code>文件，拷贝到<code>generateDir / &quot;stylesheets/style.css&quot;</code>。</p>
 <h4><code>previewDrafts</code></h4>
-<p>如果需要预览<code>_content/_drafts</code>目录下的markdown文件，则需要修改该配置：<code>previewDrafts := true</code></p>
+<p>如果需要预览<code>_content/_draft</code>目录下的markdown文件，则需要修改该配置：<code>previewDrafts := true</code></p>
 <h3>conf 文件介绍</h3>
 <p>bootlog使用<a href="https://github.com/typesafehub/config">typesafe config</a>作为配置文件库，其格式很既灵活有易读，参见<a href="https://github.com/typesafehub/config#using-hocon-the-json-superset">HOCON</a>。</p>
 <p>bootlog支持的配置详见<a href="https://github.com/jasonqu/bootlog/blob/master/src/main/resources/reference.conf">源代码</a>，需要重点关注的是：</p>
@@ -192,7 +200,7 @@ val previewDrafts = settingKey[Boolean](&quot;if this is true, then generated si
     <!-- {% include JB/analytics %} -->
     <!-- todo google prettify refactor -->
     
-     <script src="/bootlogFlatDemo/javascripts/jquery-1.11.3.min.js" type="text/javascript"></script>  <script src="/bootlogFlatDemo/javascripts/bootstrap-3.3.6.min.js" type="text/javascript"></script>  <script src="/bootlogFlatDemo/js/prism.js" type="text/javascript"></script>  <script src="/bootlogFlatDemo/js/app.js" type="text/javascript"></script> 
+     <script src="/javascripts/jquery-1.12.0.min.js" type="text/javascript"></script>  <script src="/javascripts/bootstrap-3.3.6.min.js" type="text/javascript"></script>  <script src="/js/prism.js" type="text/javascript"></script>  <script src="/js/app.js" type="text/javascript"></script> 
   </body>
 </html>
 

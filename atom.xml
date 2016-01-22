@@ -3,7 +3,7 @@
  <title>Bootlog Demo</title>
  <link href="http://jasonqu.github.io/atom.xml" rel="self"/>
  <link href="http://jasonqu.github.io"/>
- <updated>2016-01-15T17:42:30.757+08:00</updated>
+ <updated>2016-01-22T11:44:49.025+08:00</updated>
  <id>http://jasonqu.github.io</id>
  <author>
    <name>myname</name>
@@ -32,7 +32,7 @@
 &lt;/ul&gt;
 &lt;h4&gt;第二步，fork本工程&lt;/h4&gt;
 &lt;p&gt;可以选择在github上直接fork&lt;a href=&quot;https://github.com/jasonqu/bootlogFlatDemo&quot;&gt;本工程&lt;/a&gt;，或使用命令行：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/jasonqu/bootlogDemo blog
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/jasonqu/bootlogFlatDemo blog
 cd blog
 git remote set-url origin git@github.com:USERNAME/blog.git
 git push origin master
@@ -42,7 +42,9 @@ git push origin master
 &lt;p&gt;然后将&lt;code&gt;build.sbt&lt;/code&gt;的&lt;code&gt;git.remoteRepo&lt;/code&gt;修改为自己的仓库即可——&lt;code&gt;&amp;quot;https://github.com/{username}/{rootPath}.git&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;h4&gt;第四步，写博客&lt;/h4&gt;
 &lt;p&gt;现在万事俱备，只需要在&lt;code&gt;_content/_posts&lt;/code&gt;下写自己的博客，使用&lt;code&gt;sbt ghpagesPushSite&lt;/code&gt;发布网站，然后就可以在 &lt;code&gt;http://{username}.github.io/{rootPath}/&lt;/code&gt;静静地欣赏自己的大作了:)&lt;/p&gt;
-&lt;p&gt;如果遇到问题，欢迎来&lt;a href=&quot;https://github.com/jasonqu/bootlog/issues&quot;&gt;bootlog&lt;/a&gt;提issue。&lt;/p&gt;</content>
+&lt;p&gt;如果遇到问题，欢迎来&lt;a href=&quot;https://github.com/jasonqu/bootlog/issues&quot;&gt;bootlog&lt;/a&gt;提issue。&lt;/p&gt;
+&lt;p&gt;Have fun!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;img/00.jpg&quot; alt=&quot;a example for image in blog&quot; /&gt;&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -112,7 +114,7 @@ val previewDrafts = settingKey[Boolean](&amp;quot;if this is true, then generate
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;此时将把工程目录的&lt;code&gt;assets/css/style.css&lt;/code&gt;文件，拷贝到&lt;code&gt;generateDir / &amp;quot;stylesheets/style.css&amp;quot;&lt;/code&gt;。&lt;/p&gt;
 &lt;h4&gt;&lt;code&gt;previewDrafts&lt;/code&gt;&lt;/h4&gt;
-&lt;p&gt;如果需要预览&lt;code&gt;_content/_drafts&lt;/code&gt;目录下的markdown文件，则需要修改该配置：&lt;code&gt;previewDrafts := true&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果需要预览&lt;code&gt;_content/_draft&lt;/code&gt;目录下的markdown文件，则需要修改该配置：&lt;code&gt;previewDrafts := true&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;conf 文件介绍&lt;/h3&gt;
 &lt;p&gt;bootlog使用&lt;a href=&quot;https://github.com/typesafehub/config&quot;&gt;typesafe config&lt;/a&gt;作为配置文件库，其格式很既灵活有易读，参见&lt;a href=&quot;https://github.com/typesafehub/config#using-hocon-the-json-superset&quot;&gt;HOCON&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;bootlog支持的配置详见&lt;a href=&quot;https://github.com/jasonqu/bootlog/blob/master/src/main/resources/reference.conf&quot;&gt;源代码&lt;/a&gt;，需要重点关注的是：&lt;/p&gt;

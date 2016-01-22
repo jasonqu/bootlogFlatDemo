@@ -13,7 +13,7 @@
     <!--<meta name="description" content="{{meta_description}}" />-->
     <!-- TODO description -->
     
-    <title>Archive</title>
+    <title>Tags</title>
 
     <!-- Le styles -->
     
@@ -75,7 +75,7 @@
         <img src="/images/blog.png" alt="Bootlog Demo Logo" class="blog-logo"><br>
       
       
-        jekyll
+        Tags
       
     </div>
   </div>
@@ -88,84 +88,103 @@
           <div class="col-lg-12 centered">
           
             
-<main>
-	<div class="timeline">
-		<dl>
-			
-			<dt>2011 十二月</dt>
-			
-			
-			<dd class="pos-right clearfix">
-				<div class="circ ">
-				</div>
-				<div class="time">十二月 29</div>
-                    <!--<span data-toggle="tooltip" data-original-title="{{date format='YYYY-MM-DD'}} at {{date format='HH:mm'}}" title="">-->
-						<!--2011-12-29-->
-                        <!-- todo {{date timeago=true}} in javascript and the width -->
-                    <!--</span>-->
-				<div class="events">
-					<!--<div class="pull-left">-->
-						<!--<img class="events-object img-rounded" src="img/photo-1.jpg">-->
-					<!--</div>-->
-					<div class="events-body">
-						<h3 class="events-heading">
-							<a href="posts/2011-12-29-jekyll-introduction.md.html">Jekyll Introduction</a>
-						</h3>
-						<h4 class="events-heading">
-							
-							<a href="/tag/intro.html">
-								<span class="label tag-intro label-default">
-									<i class="glyphicon glyphicon-tag"></i> intro </span></a>
-							&nbsp;
-							
-							<a href="/tag/beginner.html">
-								<span class="label tag-beginner label-primary">
-									<i class="glyphicon glyphicon-tag"></i> beginner </span></a>
-							&nbsp;
-							
-							<a href="/tag/jekyll.html">
-								<span class="label tag-jekyll label-default">
-									<i class="glyphicon glyphicon-tag"></i> jekyll </span></a>
-							&nbsp;
-							
-							<a href="/tag/tutorial.html">
-								<span class="label tag-tutorial label-primary">
-									<i class="glyphicon glyphicon-tag"></i> tutorial </span></a>
-							&nbsp;
-							
-						</h4>
-						<p>
-This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
-Directly following the intro we&#x27;ll learn exactly _how_ Jekyll does what it does.
 
-## Overview
+<style type="text/css">
+    .tags {
+    min-height:300px;
+    margin: 20px auto;
+    }
 
-### &hellip;</p>
-					</div>
-				</div>
-			</dd>
-			
-			
-			
-		</dl>
-	</div>
-	
-<nav>
-    <ul class="pager">
-        <li class="previous disabled">
-        
-            <a href="index.html" onclick="return false;"><span aria-hidden="true">&larr;</span> Newer</a>
-        
-        </li>
-        <li class="page-number">Page 1 of 1</li>
-        <li class="next disabled" onclick="return false;">
-        
-        <a href="index1.html">Older <span aria-hidden="true">&rarr;</span></a>
-        
-        </li>
-    </ul>
-</nav>
-</main>
+    /* Css3 tags */
+    .tags a {
+    display: inline-block;
+    height:24px;
+    line-height:23px;
+    position:relative;
+    margin: 0 12px 8px 0;
+    padding: 0 12px 0 10px;
+    background: #777;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    color: #fff;
+    font-size:12px;
+    font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    font-weight: bold;
+    }
+
+    .tags a:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    float: left;
+    width: 5px;
+    height: 5px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff;
+    -moz-box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
+    -webkit-box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
+    box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
+    }
+
+    .tags a:after {
+    content: "";
+    position: absolute;
+    top:0;
+    right: -12px;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #777;
+    border-style: solid;
+    border-width: 12px 0 12px 12px;
+    }
+
+    .tags a.color1 {background: #f58220;}
+    .tags a.color1:after {border-color: transparent transparent transparent #f58220}
+    .tags a.color2 {background: #97c224;}
+    .tags a.color2:after {border-color: transparent transparent transparent #97c224}
+    .tags a.color3 {background: #de3f3e;}
+    .tags a.color3:after {border-color: transparent transparent transparent #de3f3e}
+    .tags a.color4 {background: #ec008c;}
+    .tags a.color4:after {border-color: transparent transparent transparent #ec008c}
+    .tags a.color5 {background: #00a6df;}
+    .tags a.color5:after {border-color: transparent transparent transparent #00a6df}
+    .tags a:hover {background:#222 !important}
+    .tags a:hover:after {border-color:transparent transparent transparent #222!important}
+
+</style>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+    <div class="tags">
+        <p>
+            
+            <a href='/tag/tutorial.html' class="color3">tutorial <span class="badge badge-warning">2</span></a>
+            
+            <a href='/tag/jekyll.html' class="color2">jekyll <span class="badge badge-warning">1</span></a>
+            
+            <a href='/tag/document.html' class="color2">document <span class="badge badge-warning">1</span></a>
+            
+            <a href='/tag/intro.html' class="color3">intro <span class="badge badge-warning">2</span></a>
+            
+            <a href='/tag/beginner.html' class="color3">beginner <span class="badge badge-warning">2</span></a>
+            
+            <a href='/tag/bootlog.html' class="color2">bootlog <span class="badge badge-warning">1</span></a>
+            
+        </p>
+    </div>
+    </div>
+</div>
+
 
           </div>
         </div>
