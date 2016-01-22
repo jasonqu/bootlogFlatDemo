@@ -1,4 +1,4 @@
-addSbtPlugin("com.github.bootlog" % "bootlog" % "0.1.0")
+addSbtPlugin("com.github.bootlog" % "bootlog" % "0.1.1")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-site" % "0.8.1")
 

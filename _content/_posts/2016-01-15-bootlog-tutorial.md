@@ -32,7 +32,7 @@ bootlog是一个sbt插件，所以这里假设您使用sbt作为自己的常用�
 
 可以选择在github上直接fork[本工程](https://github.com/jasonqu/bootlogFlatDemo)，或使用命令行：
 
-    git clone https://github.com/jasonqu/bootlogDemo blog
+    git clone https://github.com/jasonqu/bootlogFlatDemo blog
     cd blog
     git remote set-url origin git@github.com:USERNAME/blog.git
     git push origin master
@@ -46,7 +46,11 @@ bootlog是一个sbt插件，所以这里假设您使用sbt作为自己的常用�
 
 #### 第四步，写博客
 
-现在万事俱备，只需要在`_content/_posts`下写自己的博客，使用`sbt ghpagesPushSite`发布网站，然后就可以在
+现在万事俱备，只需要在`_content/_posts`下写自己的博客，使用`sbt makeMD ghpagesPushSite`发布网站，然后就可以在
 `http://{username}.github.io/{rootPath}/`静静地欣赏自己的大作了:)
 
 如果遇到问题，欢迎来[bootlog](https://github.com/jasonqu/bootlog/issues)提issue。
+
+Have fun!
+
+![a example for image in blog](img/00.jpg)
