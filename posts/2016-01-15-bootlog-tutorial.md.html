@@ -131,7 +131,7 @@ git push origin master
 <p>打开<code>conf</code>目录下的<code>application.conf</code>，将其中的<code>rootPath</code>修改为自己的仓库名，如<code>blog</code>；<code>production_url</code>修改为自己的github网址—— <code>http://{username}.github.io</code>。</p>
 <p>然后将<code>build.sbt</code>的<code>git.remoteRepo</code>修改为自己的仓库即可——<code>&quot;https://github.com/{username}/{rootPath}.git&quot;</code></p>
 <h4>第四步，写博客</h4>
-<p>现在万事俱备，只需要在<code>_content/_posts</code>下写自己的博客，使用<code>sbt ghpagesPushSite</code>发布网站，然后就可以在 <code>http://{username}.github.io/{rootPath}/</code>静静地欣赏自己的大作了:)</p>
+<p>现在万事俱备，只需要在<code>_content/_posts</code>下写自己的博客，使用<code>sbt makeMD ghpagesPushSite</code>发布网站，然后就可以在 <code>http://{username}.github.io/{rootPath}/</code>静静地欣赏自己的大作了:)</p>
 <p>如果遇到问题，欢迎来<a href="https://github.com/jasonqu/bootlog/issues">bootlog</a>提issue。</p>
 <p>Have fun!</p>
 <p><img src="img/00.jpg" alt="a example for image in blog" /></p>

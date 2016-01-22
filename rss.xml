@@ -5,8 +5,8 @@
         <description>Bootlog Demo - myname</description>
         <link>http://jasonqu.github.io/rss.xml</link>
         <link>http://jasonqu.github.io</link>
-        <lastBuildDate>2016-01-22T11:55:52.432+08:00</lastBuildDate>
-        <pubDate>2016-01-22T11:55:52.432+08:00</pubDate>
+        <lastBuildDate>2016-01-22T11:58:13.229+08:00</lastBuildDate>
+        <pubDate>2016-01-22T11:58:13.229+08:00</pubDate>
         <ttl>1800</ttl>
 
  
@@ -37,7 +37,7 @@ git push origin master
 &lt;p&gt;打开&lt;code&gt;conf&lt;/code&gt;目录下的&lt;code&gt;application.conf&lt;/code&gt;，将其中的&lt;code&gt;rootPath&lt;/code&gt;修改为自己的仓库名，如&lt;code&gt;blog&lt;/code&gt;；&lt;code&gt;production_url&lt;/code&gt;修改为自己的github网址—— &lt;code&gt;http://{username}.github.io&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;然后将&lt;code&gt;build.sbt&lt;/code&gt;的&lt;code&gt;git.remoteRepo&lt;/code&gt;修改为自己的仓库即可——&lt;code&gt;&amp;quot;https://github.com/{username}/{rootPath}.git&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;h4&gt;第四步，写博客&lt;/h4&gt;
-&lt;p&gt;现在万事俱备，只需要在&lt;code&gt;_content/_posts&lt;/code&gt;下写自己的博客，使用&lt;code&gt;sbt ghpagesPushSite&lt;/code&gt;发布网站，然后就可以在 &lt;code&gt;http://{username}.github.io/{rootPath}/&lt;/code&gt;静静地欣赏自己的大作了:)&lt;/p&gt;
+&lt;p&gt;现在万事俱备，只需要在&lt;code&gt;_content/_posts&lt;/code&gt;下写自己的博客，使用&lt;code&gt;sbt makeMD ghpagesPushSite&lt;/code&gt;发布网站，然后就可以在 &lt;code&gt;http://{username}.github.io/{rootPath}/&lt;/code&gt;静静地欣赏自己的大作了:)&lt;/p&gt;
 &lt;p&gt;如果遇到问题，欢迎来&lt;a href=&quot;https://github.com/jasonqu/bootlog/issues&quot;&gt;bootlog&lt;/a&gt;提issue。&lt;/p&gt;
 &lt;p&gt;Have fun!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;img/00.jpg&quot; alt=&quot;a example for image in blog&quot; /&gt;&lt;/p&gt;</description>
